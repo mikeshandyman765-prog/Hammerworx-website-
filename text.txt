@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HammerWorX Home Renovations — Frankfort, IN</title>
+  <meta name="description" content="HammerWorX Home Renovations — handyman & remodeling services in Frankfort, IN. Kitchens, doors, painting, plumbing repairs and more." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>HammerWorX</h1>
+        <p class="tag">Home Renovations & Handyman — Frankfort, IN</p>
+      </div>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" class="nav-toggle">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Reliable renovations. Honest pricing. Local craftsmanship.</h2>
+          <p>Kitchen & bath remodels, door installation, painting, plumbing repairs, flooring and more across Frankfort & surrounding Indiana communities.</p>
+          <a class="btn" href="#contact">Get an estimate</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- placeholder graphic -->
+          <svg width="320" height="220" viewBox="0 0 320 220" role="img" aria-label="Tool icons">
+            <rect width="320" height="220" fill="#f2f2f2"></rect>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#999">Project photos →</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container section">
+      <h3>Our Services</h3>
+      <div class="grid services-grid">
+        <article class="service">
+          <h4>Kitchen Remodels</h4>
+          <p>Full remodels: cabinets, countertops, flooring, demo, plumbing coordination, and finishing work.</p>
+        </article>
+
+        <article class="service">
+          <h4>Door Installation</h4>
+          <p>Interior and exterior door installs — framing, weatherproofing, hardware, and trim. (Labor estimates available.)</p>
+        </article>
+
+        <article class="service">
+          <h4>Painting & Drywall</h4>
+          <p>Interior ceilings, walls, prep, and finish coats. Mold-primer and mildew-resistant coatings when needed.</p>
+        </article>
+
+        <article class="service">
+          <h4>Plumbing Repairs</h4>
+          <p>Minor leak repairs, fixture replacement, and coordination with licensed plumbers for larger jobs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <h3>About HammerWorX</h3>
+      <p>Owner-operated by Mike Davis, HammerWorX offers honest, reliable home renovation and handyman work in Frankfort, IN and nearby towns. Licensed, insured, and focused on quality workmanship and clear communication.</p>
+
+      <ul class="contact-cards">
+        <li><strong>Owner</strong><br>Mike Davis</li>
+        <li><strong>Mailing</strong><br>PO Box 91, Frankfort, IN 46041</li>
+        <li><strong>Email</strong><br><a href="mailto:Mikeshandyman765@gmail.com">Mikeshandyman765@gmail.com</a></li>
+        <li><strong>Phone</strong><br><a href="tel:+17656055443">(765) 605-5443</a></li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="container section gallery">
+      <h3>Project Gallery</h3>
+      <div class="grid gallery-grid" aria-hidden="false">
+        <div class="photo">Photo 1</div>
+        <div class="photo">Photo 2</div>
+        <div class="photo">Photo 3</div>
+        <div class="photo">Photo 4</div>
+      </div>
+      <p class="muted">Replace the placeholders above with your project images (use `<img>` tags with descriptive alt text).</p>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h3>Contact / Request an Estimate</h3>
+      <p>For a quick estimate, call or email. For detailed requests, use the form and include the job address, brief description, and photos if available.</p>
+
+      <form class="contact-form" action="mailto:Mikeshandyman765@gmail.com" method="GET" accept-charset="UTF-8" aria-label="Contact form that opens email">
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Message (include address & details)
+          <textarea name="body" rows="5" required placeholder="Describe the job, include address and photos link if available"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Open Email</button>
+          <a class="btn secondary" href="tel:+17656055443">Call (765) 605-5443</a>
+        </div>
+        <p class="muted small">The button opens your email client to send an estimate request. Add photos as attachments when you send.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> HammerWorX Home Renovations — PO Box 91, Frankfort, IN</p>
+      <p class="muted small">Licensed & insured. References available on request.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
